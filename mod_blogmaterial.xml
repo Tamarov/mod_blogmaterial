@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>mod_blogmaterial</name>
+	<author>ATamarov</author>
+	<creationDate>Septembr 2017</creationDate>
+	<copyright>Copyright</copyright>
+	<license>License</license>
+	<authorEmail>molah@ukr.net</authorEmail>
+	<version>0.1</version>
+	<description>Вывод ссылок на 4 последних материала в футере</description>
+	
+	<files>
+		<filename>mod_blogmaterial.xml</filename>
+		<filename module="mod_blogmaterial">mod_blogmaterial.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="ru-RU">ru-RU/ru-Ru.mod_blogmaterial.ini</language>
+		<language tag="ru-RU">ru-RU/ru-Ru.mod_blogmaterial.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="testovoepole" type="text" default="Текст кнопки" label="Текст кнопки" description="Выводит текст написанный на кнопке" />				
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>
